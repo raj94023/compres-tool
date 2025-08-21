@@ -1,6 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Tools Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-600">My Tools</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Image Tools</a>
+        <a href="#" class="hover:text-blue-600">PDF Tools</a>
+        <a href="#" class="hover:text-blue-600">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">All-in-One Image & PDF Tools</h2>
+      <p class="text-lg md:text-xl mb-6">Fast, free, and powerful tools to optimize, compress, and manage your files right from your browser.</p>
+      <a href="#tools" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200">Explore Tools</a>
+    </div>
+  </section>
+
+  <!-- Tools Grid -->
+  <section id="tools" class="py-16 container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Popular Tools</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Tool Card -->
+      <div class="bg-white shadow rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-blue-500 text-4xl mb-4">🖼️</div>
+        <h4 class="text-xl font-semibold mb-2">Image Compressor</h4>
+        <p class="text-gray-600 mb-4">Reduce image size without losing quality. Perfect for faster websites and sharing.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Try Now →</a>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-green-500 text-4xl mb-4">📄</div>
+        <h4 class="text-xl font-semibold mb-2">PDF Merger</h4>
+        <p class="text-gray-600 mb-4">Combine multiple PDF files into a single document with ease.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Try Now →</a>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-red-500 text-4xl mb-4">✂️</div>
+        <h4 class="text-xl font-semibold mb-2">PDF Splitter</h4>
+        <p class="text-gray-600 mb-4">Split large PDFs into smaller files or extract specific pages quickly.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Try Now →</a>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-yellow-500 text-4xl mb-4">🔄</div>
+        <h4 class="text-xl font-semibold mb-2">Image Converter</h4>
+        <p class="text-gray-600 mb-4">Convert images between formats like JPG, PNG, and WebP instantly.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Try Now →</a>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-purple-500 text-4xl mb-4">🔒</div>
+        <h4 class="text-xl font-semibold mb-2">PDF Protector</h4>
+        <p class="text-gray-600 mb-4">Add password protection to your PDF documents for secure sharing.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Try Now →</a>
+      </div>
+      <div class="bg-white shadow rounded-2xl p-6 hover:shadow-lg transition">
+        <div class="text-pink-500 text-4xl mb-4">🖊️</div>
+        <h4 class="text-xl font-semibold mb-2">PDF Editor</h4>
+        <p class="text-gray-600 mb-4">Edit text, images, and annotations in your PDF files online.</p>
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Try Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 mt-16">
+    <div class="container mx-auto text-center">
+      <p>&copy; <span id="year"></span> My Tools Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+<html lang="en">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Smart Image Compressor – Fast, Private, AdSense-ready</title>
