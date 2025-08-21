@@ -186,7 +186,7 @@
             <div class="row">
               <div>
                 <label for="pubId">Publisher ID (data-ad-client)</label>
-                <input id="pubId" type="text" placeholder="ca-pub-XXXXXXXXXXXXXXXX" />
+                <input id="pubId" type="text" placeholder="ca-pub-5772892064177849" />
               </div>
               <div>
                 <label for="slotId">Ad Unit Slot ID (data-ad-slot)</label>
